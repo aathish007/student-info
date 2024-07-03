@@ -1,0 +1,87 @@
+@keyframes animateBackground {
+    0% {
+      background-color: #b2ebf2;
+    }
+    50% {
+      background-color: #80deea;
+    }
+    100% {
+      background-color: #b2ebf2;
+    }
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: animateBackground 1s infinite; /* 4 seconds for a full cycle */
+    background-color: #b2ebf2;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333; /* Adjust the font color */
+    max-width: 350px;
+  }
+  
+  .photo-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto; /* Center the image horizontally */
+  }
+  
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  h2, p {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  button.toggle-button {
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.toggle-button:hover {
+    background-color: #0288d1;
+  }
+  
+  .additional-content {
+    margin-top: 20px;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+  
+  .additional-content.visible {
+    max-height: 100px;
+  }
+  
